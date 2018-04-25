@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    background: 	#90EE90;
+}
+
+.page {
+    padding: 10px;
+ border-top: 6px solid orange;
+    border-bottom: 6px solid orange;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: green;
+}
+
+/* Style the topnav links */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#logo{
+    float: right;
+    height: 50px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    background-color: whitesmoke;
+    padding: 10px;
+    
+}
+
+#content {
+    
+     font-size: 25px;
+    
+}
+    
+
+.sticker {
+vertical-align: center;
+     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    
+}
+
+#web {
+ background:linear-gradient(green, orange ) ;
+    border: 10px dashed black;
+    outline: 4px solid black;
+    outline-offset: 2px;
+    position: relative;
+   
+ 
+
+}
+#ecotext {
+    
+    font-size: 30px;
+  font-family: "Arial";
+    text-shadow: 2px 2px grey;
+}
+
+#eco {
+    
+    height: 200px;
+    
+}
+
+#leaves {
+  height: 80px;
+  position: absolute;
+  top: 90;
+  left: 10%;
+  animation: fall 10s infinite;
+    
+    
+}
+
+
+ @keyframes fall {  
+0% {top:0;}
+100% {top:50%;}
+
+  }
+
+/* Login Page */
+
+.title {
+  padding: 10px;
+display: none;
+}
+
+#title {
+    text-align: center;
+}
+
+.login {
+    vertical-align: center;
+     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 40%;
+    
+}
+
+
+#login {
+ background:linear-gradient(green, orange ) ;
+    border: 10px dashed black;
+    outline: 4px solid black;
+    outline-offset: 2px;
+    position: relative;
+   
+ 
+
+}
+#text {
+    
+    font-size: 30px;
+  font-family: "Arial";
+    text-shadow: 2px 2px grey;
+}
+
+#tree {
+    
+    height: 200px;
+    
+}
+
+#leaf {
+  height: 80px;
+  position: absolute;
+  top: 80;
+   
+  left: 10%;
+  animation: fall 10s infinite;
+    
+    
+    
+}
+ @keyframes fall {  
+0% {top:0;}
+100% {top:50%;}
+
+  }
+
+.column {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.register {
+    display:none;
+}
+
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+
+}
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+.sticker {
+    vertical-align: center;
+     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+    }
+
+#web {
+ background:linear-gradient(green, orange ) ;
+    border: 10px dashed black;
+    outline: 4px solid black;
+    outline-offset: 2px;
+    position: relative;
+   
+ 
+
+}
+#ecotext {
+    
+    font-size: 20px;
+  font-family: "Impact";
+    text-shadow: 2px 2px grey;
+}
+
+#leaves {
+  height: 50px;
+  position: absolute;
+  top: 90;
+  left: 20%;
+  animation: fall 10s infinite;
+}
+    
+    #eco {
+    
+    height: 200px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    .content {
+    background-color: #90EE90;
+    padding: 20px;
+        
+}
+    
+#content {
+
+     font-size: 15px; }
+
+}
+
+  /* login media */
+
+@media screen and (max-width: 500px){
+
+    .title{
+    display: block;
+    }
+ 
+    .login {
+    vertical-align: center;
+     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+    #text {
+    
+    font-size: 20px;
+  font-family: "Arial";
+    text-shadow: 2px 2px grey;
+}
+
+#tree {
+    
+    height: 100px;
+    
+}
+
+#leaf {
+  height: 100px;
+  position: absolute;
+  top: 90;
+  left: 10%;
+  animation: fall 10s infinite;
+    
+    
+    
+}
+ @keyframes fall {  
+0% {top:0;}
+100% {top:50%;}
+
+  }
+       .column {
+        width: 100%;
+    }
+    .page {
+    margin: 10px;
+        padding: 10px;
+ border-top: 6px solid orange;
+    border-bottom: 6px solid orange;
+}
+
+}
+
+
+   

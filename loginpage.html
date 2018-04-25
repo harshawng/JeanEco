@@ -1,0 +1,112 @@
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CDN, or contact delivery network -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Eco-website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="120x120" href="jean%20.png">
+
+</head>
+
+<body>
+
+    <!-navigation bar->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#news" class="fa fa-folder">News </a>
+        <a href="#contact" class="fa fa-envelope">Contact</a>
+        <a href="loginpage.html" class="active";>Login</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <div class="jean"> <img id="logo" src="jean%20.png" /></div>
+    </div>
+    <!-border and title->
+    <div class="page">
+        <div class="title" id="title">
+            <h1> Login Form </h1> </div>
+        <!-login->
+        <div class="login" id="login">
+            <form name=myForm action="index.html" target="_blank" style="color:orange" onsubmit="return validateForm()">
+
+                Username:
+                <br>
+                <input type="text" name="firstname" onfocus="this.value=''" value="">
+                <br> Password:
+                <br>
+                <input type="text" name="lastname" onfocus="this.value=''" value="">
+                <br>
+                <br>
+                <input type="submit" class="btn btn-warning" value="Submit">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <!-logo->
+            </form>
+            <img id="tree" src="eco.png" /><img id="leaf">
+            <span id="text"> JASS ECO CLUB</span>
+        </div>
+
+        <div class="register"><a href="#" class="btn btn-danger" role="button">Register</a> </div>
+        <!-text->
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2 style="text-align:center">Login info</h2>
+                <span>  Having an account and logging in serves many purposes. You can do things  like: <li> Keep track of exclusive news</li> <li> Keep up to date on your progress</li> <li> Contact other memebers</li> <li>if you havn't registered. Click Here!!</li> <a href="#" class="btn btn-danger" role="button">Register</a></span>
+            </div>
+
+            <div class="column" style="background-color:#bbb;">
+                <h2 style="text-align:center">Login in with Social Media</h2>
+                <p>You can also sign up with the following social medias. This will save your time and let you get right into the CLUB!! We recommend you make one of these social medias if you have not already, as that will be the main source of communication in our club. </p>
+
+                <div class="container">
+                    <form action="/action_page.php">
+                        <div class="row">
+
+                            <div class="col">
+                                <a href="#" class="fb btn">
+                                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                </a>
+                                <a href="#" class="google btn">
+                                    <i class="fa fa-google fa-fw"></i> Login with Google+
+                                </a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-validation for login->
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["firstname", "lastname"].value;
+            if (x == "") {
+                alert("Password and username must be filled out");
+                return false;
+            }
+        }
+       
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</html>
+  

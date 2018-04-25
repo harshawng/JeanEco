@@ -1,0 +1,57 @@
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CDN, or contact delivery network -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Eco-website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="120x120" href="jean%20.png">
+
+</head>
+
+<body>
+    <!-navigation bar->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#news" class="fa fa-folder">News </a>
+        <a href="#contact" class="fa fa-envelope">Contact</a>
+        <a href="loginpage.html">Login</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <div class="jean"> <img id="logo" src="jean%20.png" /></div>
+    </div>
+    <div class="page">
+        <div class="sticker" id="web"> <img id="eco" src="eco.png" /><img id="leaves" src="leaf.png">
+            <span id="ecotext"> JASS ECO CLUB</span>
+        </div>
+        <!-responsive navigation bar->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <!-text->
+        <div class="content">
+            <span id="content">  Welcome to Eco club. We are the first Eco club in Jass and are motivated to take new challenges. We are a group young individuals who want to make the world a better place. This website is desgined to keep you informed on our goals and allows, those who are curious, SIGN UP NOW! </span>
+            <a href="loginpage.html" class="btn btn-info" role="button">Login</a>
+            <a href="#" class="btn btn-danger" role="button">Register</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
